@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ride.partners/sitemap.xml
