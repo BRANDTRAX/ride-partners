@@ -40,8 +40,8 @@
     backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line);}
   .nav{display:flex; justify-content:center; align-items:center; padding:12px 0;}
   .brand{display:flex; align-items:center; text-decoration:none; line-height:0;}
-  .brand .logo{height:100px; width:auto; display:block; transition:height .28s ease;}
-  header.scrolled .brand .logo{height:76px;}
+  .brand .logo{width:160px; max-width:40vw; height:auto; display:block; transition:width .28s ease;}
+  header.scrolled .brand .logo{width:100px;}
 
   /* hero */
   .hero{padding:32px 0 30px;}
@@ -125,8 +125,8 @@
     body{font-size:17px;}
     .wrap{padding:0 28px;}
     .nav{justify-content:flex-start;}
-    .brand .logo{height:150px;}
-    header.scrolled .brand .logo{height:112px;}
+    .brand .logo{width:240px;}
+    header.scrolled .brand .logo{width:140px;}
     .hero{padding:48px 0 34px;}
     .hero-grid{flex-direction:row; align-items:center; text-align:left; gap:48px;}
     .hero-grid > div:first-child{flex:1;} .hero-grid > .visual{flex:1;}
