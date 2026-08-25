@@ -37,8 +37,8 @@
 
   /* header: logo centred on mobile, left on desktop */
   header.site{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.92);
-    backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line);}
-  .nav{display:flex; justify-content:center; align-items:center; padding:12px 0;}
+    backdrop-filter:saturate(180%) blur(10px);}
+  .nav{display:flex; justify-content:center; align-items:center; padding:20px 0; transition:padding .28s ease;} header.scrolled .nav{padding:12px 0;}
   .brand{display:flex; align-items:center; text-decoration:none; line-height:0;}
   .brand .logo{width:160px; max-width:40vw; height:auto; display:block; transition:width .28s ease;}
   header.scrolled .brand .logo{width:100px;}
@@ -124,7 +124,7 @@
   @media (min-width:768px){
     body{font-size:17px;}
     .wrap{padding:0 28px;}
-    .nav{justify-content:flex-start;}
+    .nav{justify-content:center;}
     .brand .logo{width:240px;}
     header.scrolled .brand .logo{width:140px;}
     .hero{padding:48px 0 34px;}
