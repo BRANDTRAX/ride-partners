@@ -384,7 +384,7 @@
         timestamp: new Date().toLocaleString()
       };
       try {
-        await fetch(GOOGLE_APPS_SCRIPT_URL, { method: 'POST', body: JSON.stringify(data), mode: 'no-cors' });
+        await fetch(GOOGLE_APPS_SCRIPT_URL, { method: 'POST', body: new URLSearchParams(data), mode: 'no-cors' });
         msg.textContent = 'Thanks. We will be in touch.'; msg.className = 'rp-msg ok';
         form.reset(); btn.disabled = false; btn.textContent = original;
       } catch (err) {
