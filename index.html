@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ride Partners — Download the driver app</title>
+<meta name="description" content="Download the Ride Driver Partners app. Accept bookings, track earnings and get paid." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iIzBiMGIwYiIvPjxwYXRoIGZpbGw9IiMwMGE5Y2UiIGQ9Ik0yNDIuMyw1MGMtNjMuMjksMC0xMTUuNDQsMjguNDctMTM0LjY0LDgxLjAybC4wMi0uMDJjLTQuNTYsOS4yNi04LjI5LDE5LjI2LTExLjE3LDMwLjAxbC0zMy43NSwxMjUuOTZoNjguNzJsMjcuNTMtMTAyLjczYzE3LjgyLTY2LjUxLDQ0LjA1LTgyLjE5LDg2LjYxLTc3LjM3LDEuNy4xOS44Ni4wOCwyLjUzLjNsLjU3LS42YzI4LjkzLTI4Ljk1LDQwLjAxLTU2LjU3LTYuNDEtNTYuNTciLz48cGF0aCBmaWxsPSIjZmRkYTI1IiBkPSJNMjkzLjYzLDE1Ny40N2MzMy4wOC0zNS4zNSwzMi4xNi04Ni4yMS0xNC4xNi0xMDEuNjIsMTMuOTQsMTIuMzgtLjQzLDM0Ljg2LTIyLjQyLDU2Ljg2LTI5LjI0LDMxLjEtNTMuMzMsNTIuMzUtMTAuNzksOTUuMDlsNDcuMzctNTAuMzJaIi8+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTE5NC4yOCwyNzAuODljLTIzLjUyLTI4LjgtMjUuMjMtNzEuMjMsMTkuODEtMTEyLjUtNi43NywyMy4xOCw5LjQ3LDQxLjgsMjMuNjcsNTguNzQsMzIuMzQsMzguNTQsNzAuMjcsODQuNjEsOTkuNDksMTE4Ljg0LTE0LjE4LDguODgtMzAuOTEsMTQuMDMtNDguNzksMTQuMDNoLTI5LjU3bC02NC42MS03OS4xMVoiLz48L3N2Zz4=" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{--sans:'Gilroy','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    --teal:#00a9ce; --teal-d:#0088a8; --yellow:#fdda25; --white:#fff; --muted:#9aa3a7; --line:#1e2226; --maxw:1180px;}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:#fff; color:#0b0b0b; font-family:var(--sans); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  a{color:inherit;}
+  .wrap{width:100%; max-width:var(--maxw); margin:0 auto; padding:0 20px;}
+  h1,h2{color:#0b0b0b; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin:0;}
+  :focus-visible{outline:3px solid rgba(0,169,206,.5); outline-offset:2px;}
+
+  /* HEADER (matches ride.bs size and scroll behaviour) */
+  header{background:#fff; padding:20px; position:sticky; top:0; z-index:100; transition:padding .3s ease;}
+  header.scrolled{padding:12px 20px;}
+  .logo-container{max-width:1200px; margin:0 auto; text-align:center;}
+  .logo-container a{display:inline-block; line-height:0;}
+  .logo{width:160px; max-width:40vw; height:auto; display:inline-block; transition:width .3s ease;}
+  header.scrolled .logo{width:100px;}
+  @media(min-width:768px){ .logo{width:240px;} header.scrolled .logo{width:140px;} }
+
+  /* HERO */
+  .hero{padding:40px 0 64px;}
+  .hero-grid{display:flex; flex-direction:column; gap:36px; align-items:center; text-align:center;}
+  .hero h1{font-size:2.6rem; margin:0 0 10px;}
+  .hero .sub{font-size:1.12rem; color:#5b6570; margin:0 0 26px;}
+  .download h2{font-size:.9rem; text-transform:uppercase; letter-spacing:.16em; color:var(--teal); margin:0 0 16px; font-weight:800;}
+  .qr{background:#fff; border:1px solid #e6e6e6; border-radius:16px; padding:14px; display:inline-block; line-height:0; margin:20px 0 0;}
+  .qr img{width:170px; height:170px; display:block;}
+  .badges{display:flex; flex-direction:column; gap:14px; align-items:center;}
+  .badges a{display:inline-block; line-height:0;}
+  .badges img{height:52px; width:auto; display:block;}
+  .phone{width:100%; display:flex; justify-content:center; order:-1;}
+  .phone img{width:auto; max-width:400px; height:auto; display:block; filter:drop-shadow(0 30px 60px rgba(0,0,0,.55));}
+  @media(min-width:768px){
+    body{font-size:17px;}
+    .hero{padding:56px 0 90px;}
+    .hero-grid{flex-direction:row; align-items:center; text-align:left; gap:64px;}
+    .hero-grid > .col-text{flex:1;} .hero-grid > .phone{flex:1; order:0;}
+    .hero h1{font-size:3.6rem;}
+    .badges{flex-direction:row; justify-content:flex-start;}
+    .phone img{max-width:540px;}
+  }
+
+  /* FOOTER */
+  footer{border-top:1px solid #e6e6e6; background:#fff; padding:44px 0 34px;}
+  .foot-grid{display:grid; grid-template-columns:1fr; gap:30px; text-align:center;}
+  .addr{font-style:normal; font-size:.9rem; color:#5b6570; line-height:1.7;}
+  .addr a{color:var(--teal); text-decoration:none;}
+  .foot-h{font-weight:800; font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 12px;}
+  .foot-links{list-style:none; padding:0; margin:0;}
+  .foot-links li{margin-bottom:9px;}
+  .foot-links a{text-decoration:none; font-size:.93rem; color:#0b0b0b;}
+  .foot-links a:hover{color:var(--teal);}
+  .foot-bottom{border-top:1px solid #e6e6e6; margin-top:34px; padding-top:20px; text-align:center; font-size:.78rem; color:#5b6570; display:flex; flex-direction:column; gap:10px;} @media(min-width:768px){.foot-bottom{flex-direction:row; justify-content:space-between; text-align:left; gap:24px;}}
+  @media(min-width:768px){ .foot-grid{grid-template-columns:1.6fr 1fr 1fr; gap:40px; text-align:left;} }
+.foot-logo{display:flex;justify-content:center;margin-bottom:26px;}.foot-logo svg{width:170px;height:auto;}@media(min-width:768px){.foot-logo{justify-content:flex-start;}}</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <a href="/" aria-label="Ride home">
+      <svg class="logo" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ride">
+        <g><g>
+          <path fill="#00a9ce" fill-rule="evenodd" d="M117.96,136.58c-24.48,0-44.64,11.01-52.07,31.33h0c-1.76,3.58-3.21,7.44-4.32,11.6l-13.05,48.71h26.57l10.65-39.73c6.89-25.72,17.03-31.78,33.5-29.92.66.07.33.03.98.12l.22-.23c11.19-11.2,15.47-21.88-2.48-21.88"/>
+          <path fill="#fdda25" fill-rule="evenodd" d="M137.81,178.14c12.79-13.67,12.44-33.34-5.48-39.3,5.39,4.79-.16,13.48-8.67,21.99-11.31,12.03-20.63,20.25-4.17,36.77l18.32-19.46Z"/>
+          <path fill="#0b0b0b" fill-rule="evenodd" d="M99.39,222.01c-9.09-11.14-9.76-27.55,7.66-43.51-2.62,8.97,3.66,16.17,9.16,22.72,12.51,14.91,27.18,32.72,38.47,45.96-5.49,3.43-11.95,5.43-18.87,5.43h-11.44l-24.99-30.6Z"/>
+        </g><g>
+          <rect fill="#0b0b0b" x="221.38" y="161.13" width="12.23" height="12.23" transform="translate(-51.63 209.85) rotate(-45)"/>
+          <g>
+            <rect fill="#0b0b0b" x="221.26" y="179.62" width="12.47" height="49.61"/>
+            <path fill="#0b0b0b" d="M183.47,229.23v-24.16c0-7.09,2.29-13.11,6.86-18.07,4.64-4.96,10.21-7.45,16.72-7.45,2.08,0,4.18.08,6.29.11v11.78c-5.22,0-9.38-.39-13.63,3.86-2.51,2.51-3.77,5.77-3.77,9.76v24.16h-12.47Z"/>
+            <path fill="#0b0b0b" d="M257.57,214.92c2.58,2.51,5.8,3.77,9.67,3.77s7.06-1.25,9.57-3.77c2.51-2.58,3.77-5.86,3.77-9.86s-1.26-7.25-3.77-9.76c-2.51-2.58-5.7-3.86-9.57-3.86s-7.09,1.29-9.67,3.86c-2.51,2.51-3.77,5.77-3.77,9.76s1.26,7.28,3.77,9.86M280.57,161.57h12.47v67.66h-12.47v-5.7c-3.67,4.7-8.89,7.06-15.66,7.06s-12.08-2.45-16.72-7.35c-4.57-4.96-6.86-11.02-6.86-18.17s2.29-13.11,6.86-18.07c4.64-4.96,10.21-7.45,16.72-7.45s11.99,2.35,15.66,7.06v-25.03Z"/>
+            <path fill="#0b0b0b" d="M316.45,200.52h19.61c-.71-3.29-2.16-5.73-4.35-7.35-2.19-1.61-4.74-2.41-7.64-2.41-3.35,0-6.12.86-8.31,2.56-2.14,1.67-3.78,4.27-4.68,7.2h5.37ZM325.23,219.27c4.77,0,8.38-1.61,10.82-4.83l10.05,5.8c-4.77,6.89-11.79,10.34-21.07,10.34-7.99,0-14.4-2.42-19.23-7.25-4.83-4.83-7.25-10.92-7.25-18.27s2.38-13.27,7.15-18.17c4.71-4.9,10.82-7.35,18.37-7.35,7.15,0,12.98,2.45,17.49,7.35,4.64,4.96,6.96,11.02,6.96,18.17,0,.84-.05,1.67-.14,2.51-.1.84-.21,1.71-.34,2.61h-37.1c1.54,5.02,5.93,9.09,14.29,9.09Z"/>
+          </g>
+        </g></g>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="col-text">
+        <h1>Let's get earning.</h1>
+        <p class="sub">Download the ride driver partners app.</p>
+        <div class="download">
+          <div class="badges">
+            <a href="#" aria-label="Download on the App Store"><img src="/APP_STORE_LOGO.svg" alt="Download on the App Store" /></a>
+            <a href="#" aria-label="Get it on Google Play"><img src="/PLAY_STORE_LOGO.svg" alt="Get it on Google Play" /></a>
+          </div>
+          <div class="qr"><img src="/ride-partners-qr.png" alt="Scan to download the Ride Driver Partners app" width="170" height="170" /></div>
+        </div>
+      </div>
+      <div class="phone">
+        <img src="/ride_3_app_screens.webp" alt="Ride app booking screens" loading="eager" />
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-logo"><a href="/" aria-label="Ride home"><svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ride">
+        <g><g>
+          <path fill="#00a9ce" fill-rule="evenodd" d="M117.96,136.58c-24.48,0-44.64,11.01-52.07,31.33h0c-1.76,3.58-3.21,7.44-4.32,11.6l-13.05,48.71h26.57l10.65-39.73c6.89-25.72,17.03-31.78,33.5-29.92.66.07.33.03.98.12l.22-.23c11.19-11.2,15.47-21.88-2.48-21.88"/>
+          <path fill="#fdda25" fill-rule="evenodd" d="M137.81,178.14c12.79-13.67,12.44-33.34-5.48-39.3,5.39,4.79-.16,13.48-8.67,21.99-11.31,12.03-20.63,20.25-4.17,36.77l18.32-19.46Z"/>
+          <path fill="#0b0b0b" fill-rule="evenodd" d="M99.39,222.01c-9.09-11.14-9.76-27.55,7.66-43.51-2.62,8.97,3.66,16.17,9.16,22.72,12.51,14.91,27.18,32.72,38.47,45.96-5.49,3.43-11.95,5.43-18.87,5.43h-11.44l-24.99-30.6Z"/>
+        </g><g>
+          <rect fill="#0b0b0b" x="221.38" y="161.13" width="12.23" height="12.23" transform="translate(-51.63 209.85) rotate(-45)"/>
+          <g>
+            <rect fill="#0b0b0b" x="221.26" y="179.62" width="12.47" height="49.61"/>
+            <path fill="#0b0b0b" d="M183.47,229.23v-24.16c0-7.09,2.29-13.11,6.86-18.07,4.64-4.96,10.21-7.45,16.72-7.45,2.08,0,4.18.08,6.29.11v11.78c-5.22,0-9.38-.39-13.63,3.86-2.51,2.51-3.77,5.77-3.77,9.76v24.16h-12.47Z"/>
+            <path fill="#0b0b0b" d="M257.57,214.92c2.58,2.51,5.8,3.77,9.67,3.77s7.06-1.25,9.57-3.77c2.51-2.58,3.77-5.86,3.77-9.86s-1.26-7.25-3.77-9.76c-2.51-2.58-5.7-3.86-9.57-3.86s-7.09,1.29-9.67,3.86c-2.51,2.51-3.77,5.77-3.77,9.76s1.26,7.28,3.77,9.86M280.57,161.57h12.47v67.66h-12.47v-5.7c-3.67,4.7-8.89,7.06-15.66,7.06s-12.08-2.45-16.72-7.35c-4.57-4.96-6.86-11.02-6.86-18.17s2.29-13.11,6.86-18.07c4.64-4.96,10.21-7.45,16.72-7.45s11.99,2.35,15.66,7.06v-25.03Z"/>
+            <path fill="#0b0b0b" d="M316.45,200.52h19.61c-.71-3.29-2.16-5.73-4.35-7.35-2.19-1.61-4.74-2.41-7.64-2.41-3.35,0-6.12.86-8.31,2.56-2.14,1.67-3.78,4.27-4.68,7.2h5.37ZM325.23,219.27c4.77,0,8.38-1.61,10.82-4.83l10.05,5.8c-4.77,6.89-11.79,10.34-21.07,10.34-7.99,0-14.4-2.42-19.23-7.25-4.83-4.83-7.25-10.92-7.25-18.27s2.38-13.27,7.15-18.17c4.71-4.9,10.82-7.35,18.37-7.35,7.15,0,12.98,2.45,17.49,7.35,4.64,4.96,6.96,11.02,6.96,18.17,0,.84-.05,1.67-.14,2.51-.1.84-.21,1.71-.34,2.61h-37.1c1.54,5.02,5.93,9.09,14.29,9.09Z"/>
+          </g>
+        </g></g>
+      </svg></a></div>
+    <div class="foot-grid">
+      <div>
+        <address class="addr">
+          Ride Bahamas Limited<br/>
+          Shirlaw House, Shirley Street<br/>
+          P.O. Box N-4839<br/>
+          Nassau, New Providence, Bahamas<br/><br/>
+          <a href="mailto:info@ride.bs">info@ride.bs</a><br/>
+          <a href="tel:+12423954669">+1 (242) 395-4669</a>
+        </address>
+      </div>
+      <div>
+        <p class="foot-h">Legal</p>
+        <ul class="foot-links">
+          <li><a href="/driverterms/">Driver Terms and Privacy Notice</a></li>
+          <li><a href="/cookies/">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-h">Ride network</p>
+        <ul class="foot-links">
+          <li><a href="https://ride.bs">ride.bs</a></li>
+          <li><a href="https://ridemobility.app">ridemobility.app</a></li>
+          <li><a href="https://ride.partners">ride.partners</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>2026 © Ride Bahamas Limited is a booking agent connecting passengers with locally licensed drivers.</span></div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var h = document.querySelector('header');
+    function o(){ if(window.scrollY > 50){ h.classList.add('scrolled'); } else { h.classList.remove('scrolled'); } }
+    o(); window.addEventListener('scroll', o, {passive:true});
+  })();
+</script>
+<style>
+  .cookie-bar{position:fixed;left:0;right:0;bottom:0;z-index:1000;background:#0f1417;border-top:1px solid #24292e;transform:translateY(100%);transition:transform .3s ease;}
+  .cookie-bar.show{transform:translateY(0);}
+  .cookie-inner{max-width:1180px;margin:0 auto;padding:16px 20px;display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center;}
+  .cookie-bar p{margin:0;font-size:.86rem;color:#cfd6da;line-height:1.5;}
+  .cookie-bar a{color:#00a9ce;text-decoration:underline;}
+  .cookie-actions{display:flex;gap:10px;}
+  .cookie-btn{flex:0 0 auto;padding:.6rem 1.3rem;border-radius:999px;font-weight:700;font-size:.85rem;cursor:pointer;border:1px solid transparent;font-family:inherit;}
+  .cookie-accept{background:#00a9ce;color:#04222b;border-color:#00a9ce;}
+  .cookie-decline{background:transparent;color:#cfd6da;border-color:#39424a;}
+  @media(min-width:768px){.cookie-inner{flex-direction:row;justify-content:space-between;text-align:left;}}
+</style>
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Cookie notice">
+  <div class="cookie-inner">
+    <p>We use cookies to make this site work and to understand how it is used. See our <a href="/cookies/">Cookie Policy</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-btn cookie-decline" id="cookieDecline" type="button">Decline</button>
+      <button class="cookie-btn cookie-accept" id="cookieAccept" type="button">Accept</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var bar=document.getElementById('cookieBar'); if(!bar) return;
+  var KEY='rp_cookie_consent';
+  function get(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function set(v){try{localStorage.setItem(KEY,v);}catch(e){}}
+  if(!get()){setTimeout(function(){bar.classList.add('show');},400);}
+  document.getElementById('cookieAccept').addEventListener('click',function(){set('accepted');bar.classList.remove('show');});
+  document.getElementById('cookieDecline').addEventListener('click',function(){set('declined');bar.classList.remove('show');});
+})();
+</script>
+</body>
+</html>
